@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./build",
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    // FIXME: Workaround to upgrade to TypeScript v4.4.4 without many changes. Remove this and fix
+    // the type errors.
+    "useUnknownInCatchVariables": false,
+    "target": "es2018",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ],
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "./node_modules",
+    "**/__mocks__/*",
+    "scripts"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}
